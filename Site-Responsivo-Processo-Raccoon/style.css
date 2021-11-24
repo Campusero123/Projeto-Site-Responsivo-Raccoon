@@ -1,0 +1,1261 @@
+/*Define a fonte que será utilizada*/
+@font-face {
+    font-family:'Segoe UI';
+    src: url('assets/segoeui.ttf');
+}
+/*Define o fundo da seção de menu, remove a borda e a margem, define a largura como 100% da largura da página do site, define a fonte
+que será utilizada no head do site e alinha seu conteúdo de forma centralizada*/
+.container-head {
+    background-color: #2571b7;
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI';
+}
+/*Define a div com largura equivalente a 70% da página do site, define a altura da div e centraliza o seu conteúdo*/
+.container-header {
+    width: 70%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+/*Alinha a logo de forma centralizada verticalmente e à esquerda da div horizontalmente e define suas dimensões*/
+.container-logo {
+    display: flex;
+    width: 171px;
+    height: 36px;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Alinha o conteúdo de forma centralizada verticalmente e à direita da div horizontalmente e define a largura da div*/
+.container-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    align-items: center;
+}
+
+.menu-mobile {
+    visibility: hidden;
+}
+/*Altera a cor do texto dos links para branco, adiciona padding nas laterais para afastar um link do outro, e remove as estilizações, a fim
+de remover o sublinhado padrão do link*/
+.link-topo {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+/*Define altura e largura do botão do menu, centraliza o botão, altera sua cor de fundo, remove sua borda e estilizações, muda a cor de seu
+texto, alinha o texto, e muda o cursor do mouse ao entrar em contato com o botão*/
+.container-menu button {
+    height: 36px;
+    width: 125px;
+    justify-content: center;
+    background-color: #002050; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Muda a cor do botão ao passar o mouse em cima dele*/
+.container-menu button:hover {
+    background-color: #183f79;
+}
+/*Define largura da div de 100% da largura da página, define altura de 820px (igual à altura da imagem de background da div), define essa imagem 
+como background da div, define que a largura dessa imagem deve acompanhar a largura da div, alinha o conteúdo da div ao centro e define exibição
+em linha sem quebra de linha, e adiciona gradiente em níveis de preto sobrepondo a imagem*/
+.container-titulo {
+    background: linear-gradient(180deg, rgba(0,0,0,0.4962359943977591) 0%, rgba(0,0,0,0.5018382352941176) 35%, rgba(0,0,0,0.9) 100%), 
+    url('assets/ballpen-blur-close-up-461077.png');
+    width: 100%;
+    height: 820px;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+}
+/*Alinha os textos e o botão juntos ao centro do eixo vertical e à esquerda do eixo horizontal, exibe esses elementos em coluna com quebra
+de linha, define padding à esquerda do conteúdo para afastar esse conteúdo da borda, e define largura da div equivalente a 90% da largura
+da página e altura de 820px*/
+.container-conteudo-titulo {
+    width: 90%;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column wrap;
+    padding-left: 100px;
+}
+/*Altera a cor do texto sobreposto à imagem, alinha o texto à esquerda da div, altera o tamanho da fonte para 35px, e adiciona um padding
+abaixo do texto para se distanciar do botão*/
+.text-background {
+    color: white;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+/*Alinha a logo sobreposta à imagem, de forma que fique no canto inferior direito da div, e define padding de 80px abaixo e 160px à direita
+para afasta-la da borda*/
+.container-titulo .container-logo {
+    display: flex;
+    justify-self: self-end;
+    align-self: end;
+    padding-bottom: 80px;
+    padding-right: 160px;
+}
+/*Define altura de 60px e largura de 240px para o botão, altera o tamanho da fonte para 25px, muda a cor de fundo do botão, muda a cor
+do texto do botão, remove a borda do botão, alinha o texto do botão de forma centralizada, remove a estilização do botão, e alinha o botão
+à esquerda da div*/
+.container-conteudo-titulo button {
+    height: 60px;
+    width: 240px;
+    font-size: 25px;
+    background-color: #00a4ef;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-self:start;
+    align-self: flex-start;
+}
+/*Define largura de 100% do tamanho da página para o body, alinha todo o conteúdo de forma centralizada e exibe esse conteúdo em colunas
+com quebra de linha, e define a família da fonte que será usada em todos os textos do body*/
+.container-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+/*Adiciona padding acima e abaixo da div para afasta-la do conteúdo que estiver antes e depois dela na página, altera a cor do texto da div,
+define largura da div de 80% do tamanho da largura da página, e altera o tamanho da fonte*/
+.container-apresentacao {
+    padding-top: 60px;
+    color: #6c6c6c;
+    font-size: 20px;
+    width: 80%;
+    padding-bottom: 30px;
+}
+/*Muda a cor do título presente na tag span, e estiliza a fonte em negrito*/
+.container-apresentacao span {
+    color: #f24a1b;
+    font-weight: bold;
+}
+/*Centraliza o conteúdo presente na div, exibe o conteúdo em linha, permitindo quebra de linha, alinha o conteúdo com espaçamento ao redor
+deles, define largura da div de 70% da largura da página e adiciona padding abaixo da div de 50px, a fim de distanciar o a div da div
+seguinte da página*/
+.container-alvos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    padding-bottom: 50px;
+}
+/*Muda a cor do texto contido na div*/
+.apresentacao-alvos {
+    color: #6c6c6c;
+}
+/*Adiciona padding acima e abaixo do parágrafo para distancia-lo do título e da div seguinte da página, e altera o tamanho da fonte*/
+.apresentacao-alvos p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+/*Muda a cor do título presente na tag span*/
+.apresentacao-alvos span {
+    color: #2571b7;
+}
+/*Define uma margem de 5px em todas as direções para a div, alinha seu conteúdo de forma centralizada, altera a cor do texto presente na div
+para branco, alinha o texto de forma centralizada, define largura de 500px e altura de 90px para a div, e exibe o conteúdo em linha, sem
+permitir quebra de linha*/
+.alvos {
+    margin: 5px;
+    display:flex;
+    flex-flow: row nowrap;
+    width: 500px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+}
+/*Alinha o texto horizontalmente à esquerda, no início da linha, e define o tamanho da fonte*/
+.text-alvo {
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+/*Aumenta o padding acima do título, a fim de aproxima-lo do parágrafo*/
+.text-alvo h3 {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin: 0;
+}
+/*Aumenta o padding embaixo do parágrafo, a fim de aproxima-lo do título*/
+.text-alvo p {
+    padding-bottom: 5px;
+    margin: 0;
+}
+/*Aumenta o padding à esqueda da imagem, a fim de afasta-la da borda da div*/
+.img-alvo {
+    padding-left: 15px;
+}
+/*Muda a cor de fundo da primeira div alvos*/
+.alvos:nth-of-type(1) {
+    background-color: #0072c6;
+}
+/*Muda a cor de fundo da segunda div alvos*/
+.alvos:nth-of-type(2) {
+    background-color: #2c5898;
+}
+/*Muda a cor de fundo da terceira div alvos*/
+.alvos:nth-of-type(3) {
+    background-color: #207245;
+}
+/*Muda a cor de fundo da quarta div alvos*/
+.alvos:nth-of-type(4) {
+    background-color: #cb4a32;
+}
+/*Muda a cor de fundo da quinta div alvos*/
+.alvos:nth-of-type(5) {
+    background-color: #733781;
+}
+/*Muda a cor de fundo da sexta div alvos*/
+.alvos:nth-of-type(6) {
+    background-color: #00aff0;
+}
+/*Muda a cor de fundo da sétima div alvos*/
+.alvos:nth-of-type(7) {
+    background-color: #094ab2;
+}
+/*Muda a cor de fundo da oitava div alvos*/
+.alvos:nth-of-type(8) {
+    background-color: #0073c6;
+}
+/*Muda a cor de fundo da nona div alvos*/
+.alvos:nth-of-type(9) {
+    background-color: #0093be;
+}
+/*Muda a cor de fundo da décima div alvos*/
+.alvos:nth-of-type(10) {
+    background-color: #5558af;
+}
+/*Altera a cor do título presente na tag span*/
+.container-missoes span{
+    color:#2571b7;
+}
+/*Adiciona padding abaixo do título para distancia-lo da próxima div da página*/
+.container-missoes h1 {
+    padding-bottom: 20px;
+}
+/*Alinha o conteúdo da div de forma centralizada, e exibe seu conteúdo em forma de linha, com quebra de linha e adiciona padding abaixo, a fim
+de distanciar-se da próxima div*/
+.missoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+}
+/*Muda a cor de fundo da div img-mission1, define suas dimensões, e alinha a imagem de forma centralizada, e arredonda a borda para se tornar 
+circular*/
+.img-mission1 {
+    background-color: #7fba00;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Muda a cor de fundo da div img-mission2, define suas dimensões, e alinha a imagem de forma centralizada, e arredonda a borda para se tornar 
+circular*/
+.img-mission2 {
+    background-color: #00a4ef;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Muda a cor de fundo da div img-mission3, define suas dimensões, e alinha a imagem de forma centralizada, e arredonda a borda para se tornar 
+circular*/
+.img-mission3 {
+    background-color: #ffb900;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Alinha todo o conteúdo da div de forma centralizada, altera o tamanho da fonte dos textos presentes nessa div, assim como a largura da div, e 
+atribui a seus itens uma ordem de exibição em forma de coluna, com quebra de linha*/
+.mission-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    font-size: 12px;
+    width: 450px;
+}
+/*Define o tamanho de 275px para a div do texto*/
+.img-texto {
+    width: 275px;
+}
+/*Cria a linha horizontal, definindo suas características de cor e tamanho*/
+.linha-site hr {
+    border: 0;
+    border-bottom: 5px solid #dedede;
+    width: 60px;
+}
+/*Altera a cor do texto do parágrafo, o tamanho da fonte, e adiciona padding acima e abaixo para se distanciar da div anterior e seguinte
+da página*/
+.img-texto p {
+    color: #6c6c6c;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+/*Altera a cor do texto do elemento span da primeira mission-div, assim como o tamanho da sua fonte*/
+.mission-div:nth-of-type(1) span{
+    font-size: 18px;
+    color: #7fba00;
+}
+/*Altera a cor do texto do elemento span da segunda mission-div, assim como o tamanho da sua fonte*/
+.mission-div:nth-of-type(2) span{
+    font-size: 18px;
+    color: #00a4ef;
+}
+/*Altera a cor do texto do elemento span da terceira mission-div, assim como o tamanho da sua fonte*/
+.mission-div:nth-of-type(3) span{
+    font-size: 18px;
+    color: #ffb900;
+}
+/*Muda a cor de fundo do botão, define a altura e largura do botão, define o display do botão, define largura e cor da borda
+do botão, define a cor do texto dentro do botão, alinha o texto de forma centralizada, elimina qualquer estilização, muda o estilo do cursor
+do mouse ao entrar em contato com o botão*/
+.button-mission1 button{
+    background-color: white;
+    height: 36px;
+    width: 100px;
+    border: 2px solid #7fba00;
+    color: #7fba00;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Muda a cor de fundo do botão, define a altura e largura do botão, define o display do botão, define largura e cor da borda
+do botão, define a cor do texto dentro do botão, alinha o texto de forma centralizada, elimina qualquer estilização, muda o estilo do cursor
+do mouse ao entrar em contato com o botão*/
+.button-mission2 button{
+    background-color: white;
+    height: 36px;
+    width: 100px;
+    border: 2px solid #00a4ef;
+    color: #00a4ef;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Muda a cor de fundo do botão, define a altura e largura do botão, define o display do botão, define largura e cor da borda
+do botão, define a cor do texto dentro do botão, alinha o texto de forma centralizada, elimina qualquer estilização, muda o estilo do cursor
+do mouse ao entrar em contato com o botão*/
+.button-mission3 button{
+    background-color: white;
+    height: 36px;
+    width: 100px;
+    border: 2px solid #ffb900;
+    color: #ffb900;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Desativa a visibilidade da linha horizontal que deverá ser usada na versão mobile*/
+.linha-mobile hr {
+    visibility: hidden;
+}
+/*Altera a cor do título presente na tag span, e aumenta o tamanho da sua fonte*/
+.goals span {
+    color: #2571b7;
+    font-size: 36px;
+}
+/*Exibe todo o conteúdo em linha, sem permitir quebra de linha, centraliza o conteúdo vertical e horizontalmente, define padding acima e abaixo
+da div, a fim de se distanciar da div anterior e da próxima na página*/
+.container-goals {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+/*Define as dimensões de cada quadrado, define tamanho e cor da borda de cada quadrado, alinha seu conteúdo de forma centralizada e o exibe
+em coluna com quebra de linha*/
+.goal-div {
+    display: flex;
+    flex-flow: column wrap;
+    border: 3px solid #dedede;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+/*Remove a borda direita do primeiro quadrado*/
+.goal-div:nth-of-type(1) {
+    border-right: none;
+}
+/*Remove a borda direita do segundo quadrado*/
+.goal-div:nth-of-type(2) {
+    border-right: none;
+}
+/*Remove a borda direita do terceiro quadrado*/
+.goal-div:nth-of-type(3) {
+    border-right: none;
+}
+/*Muda a cor do texto do título da div*/
+.goal-div h3 {
+    color: #f14818;
+}
+/*Define largura de 240px para a div, e alinha o conteúdo de texto de forma centralizada*/
+.text-goal {
+    width: 240px;
+    text-align: center;
+}
+/*Muda a cor do texto do parágrafo da div*/
+.text-goal p {
+    color: #6c6c6c;
+}
+/*Define uma imagem de fundo para a div, atribui largura para a div acompanhar a largura da página do site, configura imagem de fundo para 
+acompanhar a largura da div, define degradê em preto para escurecer a imagem de fundo, define altura para a div e centraliza todo o conteúdo*/
+.container-time {
+    width: 100%;
+    height: 376px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5018382352941176) 35%, rgba(0,0,0,0.5) 100%), 
+    url("assets/achievement-adult-agreement-1391373.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Muda a cor do texto da div, muda o tamanho da fonte do texto, e define a largura da div como sendo 75% do tamanho da largura da pádina*/
+.text-time {
+    color: white;
+    font-size: 48px;
+    width: 75%;
+}
+/*Configura a div para acompanhar a largura da página, define a família da fonte que será utilizada no footer, alinha o conteúdo de forma
+centralizada e exibe o conteúdo em coluna com quebra de linha*/
+.container-footer {
+    width: 100%;
+    font-family: 'Segoe UI';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+/*Adciona padding acima e abaixo do texto para distancia-lo da div imediatamente anterior e imediatamente seguinte a ele na página, muda
+a cor do texto, muda o tamanho da fonte, e define a largura como sendo 90% da largura da página*/
+.footer-text {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #6c6c6c;
+    font-size: 24px;
+    width: 90%;
+}
+/*Muda a cor do background da div o, define altura e largura para essa div, e alinha seu conteúdo de forma centralizada*/
+.container-contato {
+    background-color: #e6e6e6;
+    height: 750px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Alinha o conteúdo da div de forma centralizada e com espaço entre seus itens, além de definir suas dimensões*/
+.form-contato {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 600px;
+    width: 500px;
+}
+/*Alinha os rótulos do formulário à esquerda*/
+form label {
+    display: flex;
+    justify-content: start;
+}
+/*Altera o tamanho da fonte dos rótulos do formulário, adiciona padding acima para distancia-las dos inputs e altera a cor do seu texto*/
+label {
+    font-size: 14px;
+    padding-top: 30px;
+    color: #6c6c6c;
+}
+/*Altera a cor do primeiro rótulo do formulário*/
+label:first-of-type {
+    color: #196ab4;
+}
+/*Define largura de 450px para o input, altura de 50px, altera o tamanho da fonte para 18px, muda a cor do seu texto e remove sua borda*/
+input {
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    color: #6c6c6c;
+}
+/*Adiciona borda sólida de 2px para o primeiro input do formulário, e altera sua cor*/
+input:first-of-type {
+    border: 2px solid #196ab4;
+}
+/*Altera as características do último input do formulário, que apesar de ser um input, é também o botão de envio de informações do formulário.
+São modificadas a cor de fundo, cor do texto interno, estilização e display do botão, além do alinhamento central do texto e a mudança do
+cursor do mouse ao entrar em contato com o botão, define altura desse input de 60px e tamanho da fonte do seu texto de 25px*/
+input:last-of-type {
+    background-color: #00a4ef;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    font-size: 25px;
+}
+/*Cria uma linha invisível sem altura, apenas com o intuito de distanciar o último input de texto e o botão de submit, o que é alcançado
+com sucesso ao criar um padding-bottom, também define largura para a linha*/
+.invisible-div {
+    border: 0;
+    height: opx;
+    width: 400px;
+    padding-bottom: 30px;
+}
+/*Alinhas as imagens que compõem cada logo de forma centralizada, e com espaço entre elas, define suas dimensões, adiciona padding à direita
+para distanciar as logos montadas uma da outra, e exibe o conteúdo das imagens em linha sem quebra de linha*/
+.img-copy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    flex-flow: row nowrap;
+    padding-right: 40px;
+}
+/*Adiciona padding à direita de cada imagem  que compõe a logo, a fim de separa-las um pouco*/
+.img-copy img {
+    padding-right: 3px;
+}
+/*Alinhas as logos montadas de forma centralizada e com espaço entre elas, define as dimensões da div e exibe seu conteúdo em linha sem
+quebra de linha*/
+.img-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    flex-flow: row nowrap;
+}
+/*Adiciona padding acima e abaixo da div, para se afastar da div anterior, e do fim da página, alinha o conteúdo de forma centralizada,
+define as dimensões da div e exibe o seu conteúdo em coluna com quebra de linha*/
+.container-copyright {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    flex-flow: column wrap;
+}
+/*Adiciona padding acima do parágrafo para distancia-lo do conteúdo anterior a ele na página, e muda a cor do seu texto*/
+.container-copyright p {
+    padding-top: 10px;
+    color: #c3c3c3;
+}
+/*
+*
+*
+*
+*
+*
+A seguir será estilizada a versão mobile do site
+*
+*
+*
+*
+*/
+/*Define que o layout da página será diferente em uma tela de largura de 720px para baixo. Tudo o que for definido dentro dessa regra
+modifica o site apenas para essa nova resolução*/
+@media screen and (max-width: 720px) {
+/*Desabilita a barra de rolagem horizontal do site*/
+    html {
+        overflow-x: hidden;
+    }
+    /*Muda as dimensões e alinha o conteúdo*/
+    .container-head {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Muda as dimensões e alinha o conteúdo*/
+    .container-header {
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+    }
+    /*Muda as dimensões e realinha o conteúdo para o final da div*/
+    .container-menu {
+        width: 90%;
+        height: 40px;
+        justify-content: end;
+    }
+    /*Ativa o menu da versão mobile, definindo dimensões, alinhando o conteúdo de forma centralizada e exibindo esse conteúdo em linha com
+    quebra de linha, e adiciona margem à direita para garantir que o menu fique à esquerda mesmo redimensionando a janela do site*/
+    .menu-mobile {
+        visibility: visible;
+        height: 28px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-right: 30%;
+    }
+    /*Muda a cor de fundo do menu mobile ao passar o mouse em cima dele*/
+    .menu-mobile:hover {
+        background-color: #1f57aa;
+    }
+    /*Estiliza as linhas horizontais que compõem o menu mobile*/
+    .menu-mobile hr {
+        border: 0;
+        border-bottom: 2px solid #dedede;
+        width: 30px;
+        margin: 0;
+    }
+    /*Esconde os links de navegação do menu*/
+    .link-topo {
+        visibility: hidden;
+        padding: 0;
+    }
+    /*Ativa a visibiidade do botão do menu e zera sua margem à esquerda*/
+    .container-menu button {
+        visibility: visible;
+        margin-left: 0px;
+    }
+    /*Destrói a div nessa resolução do site*/
+    .container-logo {
+        display: none;
+    }
+    /*Define as dimensões, define que a imagem de fundo deve acompanhar a largura do site, alinha o conteúdo de forma centralizada e exibe
+    esse conteúdo em forma de coluna com quebra de linha*/
+    .container-titulo {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    /*Define largura da div de 80% em relação à div que a contém, alinha o conteúdo de forma centralizada, zera o padding à esquerda da div e
+    exibe o conteúdo em coluna com quebra de linha*/
+    .container-conteudo-titulo {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        padding-left: 0;
+    }
+    /*Alinha o conteúdo de forma centralizada, alinha o texto de forma centralizada, define altura da div de 50% em relação à div que a
+    contém e zera o padding abaixo da div*/
+    .text-background {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        height: 50%;
+        padding-bottom: 0;
+    }
+    /*Altera o tamanho da fonte do parágrafo*/
+    .text-background p {
+        font-size: 25px;
+    }
+    /*Define padding abaixo da div de 30px e alinha seu conteúdo de forma centralizada*/
+    .container-titulo .container-logo {
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Altera as dimensões do botão, altera o tamanho da fonte de seu texto interno, e alinha seu conteúdo de forma centralizada*/
+    .container-conteudo-titulo button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        justify-self:center;
+        align-self: center;
+    }
+    /*Define largura de 100% da largura do site para o body e alinha seu conteúdo de forma centralizada*/
+    .container-body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Altera o tamanho da fonte e define largura da div de 90% em relação ao site*/
+    .container-apresentacao {
+        font-size: 20px;
+        width: 90%;
+    }
+    /*Define largura da div de 90% em relação ao site*/
+    .apresentacao-alvos {
+        width: 90%;
+    }
+    /*Define largura da div de 100% da largura do site*/
+    .container-alvos {
+        width: 100%;
+    }
+    /*Define altura e largura da div, sendo a última de 100% da largura do site*/
+    .alvos {
+        width: 90%;
+        height: 150px;
+    }
+    /*Altera o tamanho da fonte*/
+    .text-alvo {
+        font-size: 16px;
+    }
+    /*Define largura da div de 100% da largura do site e alinha o conteúdo de forma centralizada*/
+    .container-missoes {
+        width: 100%;
+        align-items: center;
+    }
+    /*Define largura da div de 100% da largura do site e alinha o conteúdo de forma centralizada*/
+    .missoes {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Define padding abaixo da div de 50px, alinha seu conteúdo ao final da div, e exibe esse conteúdo em forma reversa de linha, com quebra
+    de linha*/
+    .mission-div {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-bottom: 50px;
+    }
+    /*Alinha o botão ao início da div*/
+    .mission-div .button-mission1 {
+        align-self: flex-start;
+        justify-self:flex-start
+    }
+    /*Alinha o texto à esquerda da div e alinha seu conteúdo verticalmente com espaço igual entre os elementos*/
+    .img-texto {
+        text-align:start;
+        justify-content: space-evenly;
+    }
+    /*Define largura de 320px para o parágrafo, tamanho médio de fonte e zera o padding acima da div*/
+    .img-texto p {
+        width: 320px;
+        font-size: medium;
+        padding-top: 0px;
+    }
+    /*Altera o tamanho do texto do título para médio*/
+    .img-texto h1 {
+        font-size: medium;
+    }
+    /*Altera as dimensões da div, adiciona margens abaixo e à esuqerda, e alinha o conteúdo de forma centralizada*/
+    .img-mission1 {
+        width: 75px;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 80px;
+    }
+    /*Altera as dimensões da imagem*/
+    .img-mission1 img {
+        height: 40px;
+        width: 40px;
+    }
+    /*Destrói a div nessa resolução do site*/
+    .linha-site hr {
+        display: none;
+    }
+    /*Altera as dimensões da div, adiciona margens abaixo e à esuqerda, e alinha o conteúdo de forma centralizada*/
+    .img-mission2 {
+        width: 75px;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 80px;
+    }
+    /*Altera as dimensões da imagem*/
+    .img-mission2 img {
+        height: 41px;
+        width: 35px;
+    }
+    /*Altera as dimensões da div, adiciona margens abaixo e à esuqerda, e alinha o conteúdo de forma centralizada*/
+    .img-mission3 {
+        width: 75px;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 80px;
+    }
+    /*Ativa a visibilidade da linha da versão mobile, define borda na parte inferior, adiciona padding acima, para se distanciar do conteúdo
+    imediatamente anterior*/
+    .linha-mobile hr {
+        border: 0;
+        border-bottom: 5px solid #dedede;
+        width: 450px;
+        visibility: visible;
+        padding-top: 30px;
+    }
+    /*Altera as dimensões da imagem*/
+    .img-mission3 img {
+        height: 31px;
+        width: 36px;
+    }
+    /*Define largura da div de 100% da largura do site*/
+    .goals {
+        width: 100%;
+    }
+    /*Alinha o conteúdo em linha com quebra de linha*/
+    .container-goals {
+        flex-flow: row wrap;
+    }
+    /*Define largura de 450px para a div e altera o tamanho da fonte*/
+    .goal-div {
+        width: 450px;
+        font-size: 16px;
+    }
+    /*Altera a largura para 350px*/
+    .text-goal {
+        width: 350px;
+    }
+    /*Para o 1º objetivo, é estilizada a borda direita e removida a borda inferior*/
+    .goal-div:nth-of-type(1) {
+        border-right: 3px solid #dedede;
+        border-bottom: none;
+    }
+     /*Para o 2º objetivo, é estilizada a borda direita e removida a borda inferior*/
+    .goal-div:nth-of-type(2) {
+        border-right: 3px solid #dedede;
+        border-bottom: none;
+    }
+    /*Para o 3º objetivo, é estilizada a borda direita e removida a borda inferior*/
+    .goal-div:nth-of-type(3) {
+        border-right: 3px solid #dedede;
+        border-bottom: none;
+    }
+    /*É definida largura para a div de 100% da largura do site, além de uma altura de 230px*/
+    .container-time {
+        width: 100%;
+        height: 230px;
+    }
+    /*É alterado o tamanho da fonte para 26px;*/
+    .text-time {
+        font-size: 26px;
+    }
+    /*É definida largura para a div de 100% da largura do site e seu conteúdo é centralizado*/
+    .container-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*É definida largura para a div de 80% em relação à div anterior, seu conteúdo interno é alinhado de forma centralizada e o tamanho
+    da fonte alterado para 18px*/
+    .footer-text {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /*É definida largura para a div de 90% em relação à div anterior, além de uma altura de 670px e seu conteúdo alinhado de forma centralizada*/
+    .container-contato {
+        height: 670px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*É definida altura de 500px e largura de 100% da largura da div anterior, seu conteúdo é alinhado de forma centralizada e é adicionado
+    um padding à esquerda da div de 15%*/
+    .form-contato {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15%;
+    }
+    /*É definida para o input do formulário uma altura de 40px e largura de 80% da div anterior, alpem de o conteúdo ser alinhado no início
+    do input*/
+    input {
+        width: 80%;
+        height: 40px;
+        display: flex;
+        justify-content: start;
+    }
+    /*É definido alinhamento centralizado para o input de submissão, além de margem direita de 100px e tamanho de fonte de 25px*/
+    input:last-of-type {
+        display: inline-block;
+        justify-self: start;
+        align-self: center;
+        height: 60px;
+        font-size: 25px;
+        margin-right:100px;
+    }
+    /*Remove o padding superior do rótulo*/
+    label {
+        padding-top: 0;
+    }
+    /*É definida largura para a div de 100% da largura do site e alinha seu conteúdo de forma centralizada*/
+    .container-copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*É definida largura para a div de 80% da largura do site e adicionado padding à esquerda da div de 40px*/
+    .img-copyright {
+        width: 80%;
+        padding-left: 40px;
+    }
+    /*São definidas as dimensões da div*/
+    .img-copy {
+        height: 40px;
+        width: 180px;
+    }
+    /*É definido padding de 5px acima do parágrafo, e também é definida sua cor*/
+    .container-copyright p {
+        padding-top: 5px;
+        color: #c3c3c3;
+    }
+
+}
+/*
+*
+*
+*
+*
+*
+A seguir será estilizada a versão entre 721px e 884px
+*
+*
+*
+*
+*/
+/*Define que o layout da página será diferente em uma tela de largura entre 721px e 884px. Tudo o que for definido dentro dessa regra
+modifica o site apenas para essa nova resolução*/
+@media screen and (min-width: 720px) and (max-width: 900px){
+    /*É definida largura para a div de 100% da largura do site*/
+    .container-head {
+        width: 100%;
+    }
+    /*É definida largura para a div de 100% da largura do site e seu conteúdo centralizado*/
+    .container-header {
+        width: 100%;
+        justify-content: center;
+    }
+    /*É definida largura para a div de 80% da largura do site e seu conteúdo alinhado ao fim da div*/
+    .container-menu {
+        width: 80%;
+        align-content: flex-end;
+    }
+    /*São alterados os tamanhos dos paddings e do texto dos links de navegação*/
+    .link-topo {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Define as dimensões, define que a imagem de fundo deve acompanhar a largura do site, alinha o conteúdo de forma centralizada e exibe
+    esse conteúdo em forma de coluna sem quebra de linha*/
+    .container-titulo {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    /*Define largura da div de 80% em relação à div que a contém, alinha o conteúdo de forma centralizada, zera o padding à esquerda da div e
+    exibe o conteúdo em coluna com quebra de linha*/
+    .container-conteudo-titulo {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        padding-left: 0;
+    }
+    /*Alinha o conteúdo de forma centralizada, alinha o texto de forma centralizada, define altura da div de 50% em relação à div que a
+    contém, zera o padding inferior da div e muda o tamanho da fonte do texto*/
+    .text-background {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        height: 50%;
+        padding-bottom: 0;
+    }
+    /*Altera o tamanho da fonte do parágrafo*/
+    .text-background p {
+        font-size: 25px;
+    }
+    /*Define padding inferior e à direira da div de 30px*/
+    .container-titulo .container-logo {
+        padding-bottom: 30px;
+        padding-right: 30px;
+    }
+    /*Altera as dimensões do botão, altera o tamanho da fonte de seu texto interno, e alinha seu conteúdo de forma centralizada*/
+    .container-conteudo-titulo button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        justify-self:center;
+        align-self: center;
+    }
+    
+    /*Define largura de 100% da largura do site para o body e alinha seu conteúdo de forma centralizada*/
+    .container-body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Altera o tamanho da fonte e define largura da div de 90% em relação ao site*/
+    .container-apresentacao {
+        width: 90%;
+    }
+    /*Define largura da div de 100% da largura do site e alinha o conteúdo de forma centralizada*/
+    .container-missoes {
+        width: 100%;
+        align-items: center;
+    }
+    /*Define largura da div de 100% da largura do site e alinha o conteúdo de forma centralizada*/
+    .missoes {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mission-div {
+        padding-top: 30px;
+    }
+    /*Define largura da div de 100% da largura do site*/
+    .goals {
+        width: 100%;
+    }
+    /*Alinha o conteúdo em linha com quebra de linha*/
+    .container-goals {
+        flex-flow: row wrap;
+    }
+    /*Define largura de 450px para a div e altera o tamanho da fonte*/
+    .goal-div {
+        width: 450px;
+        font-size: 16px;
+    }
+    /*Altera a largura para 350px*/
+    .text-goal {
+        width: 350px;
+    }
+    /*Para o 1º objetivo, é estilizada a borda direita e removida a borda inferior*/
+    .goal-div:nth-of-type(1) {
+        border-right: 3px solid #dedede;
+        border-bottom: none;
+    }
+     /*Para o 2º objetivo, é estilizada a borda direita e removida a borda inferior*/
+    .goal-div:nth-of-type(2) {
+        border-right: 3px solid #dedede;
+        border-bottom: none;
+    }
+    /*Para o 3º objetivo, é estilizada a borda direita e removida a borda inferior*/
+    .goal-div:nth-of-type(3) {
+        border-right: 3px solid #dedede;
+        border-bottom: none;
+    }
+    /*É definida largura para a div de 100% da largura do site, além de uma altura de 230px*/
+    .container-time {
+        width: 100%;
+        height: 300px;
+    }
+
+    /*É alterado o tamanho da fonte para 26px;*/
+    .text-time {
+        font-size: 26px;
+    }
+
+    .container-footer {
+        width: 100%;
+    }
+}
+/*
+*
+*
+*
+*
+*
+A seguir será estilizada a versão entre 885px e 1330px
+*
+*
+*
+*
+*/
+/*Define que o layout da página será diferente em uma tela de largura entre 901px e 1330px. Tudo o que for definido dentro dessa regra
+modifica o site apenas para essa nova resolução*/
+@media screen and (min-width: 900px) and (max-width: 1330px){
+    /*É definida largura para a div de 100% da largura do site*/
+    .container-head {
+        width: 100%;
+    }
+    /*É definida largura para a div de 100% da largura do site e seu conteúdo centralizado*/
+    .container-header {
+        width: 100%;
+        justify-content: center;
+    }
+    /*É definida largura para a div de 80% da largura do site e seu conteúdo alinhado ao fim da div*/
+    .container-menu {
+        width: 80%;
+        align-content: flex-end;
+    }
+    /*São alterados os tamanhos dos paddings e do texto dos links de navegação*/
+    .link-topo {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Define as dimensões, define que a imagem de fundo deve acompanhar a largura do site, alinha o conteúdo de forma centralizada e exibe
+    esse conteúdo em forma de coluna sem quebra de linha*/
+    .container-titulo {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    /*Define largura da div de 80% em relação à div que a contém, alinha o conteúdo de forma centralizada, zera o padding à esquerda da div e
+    exibe o conteúdo em coluna com quebra de linha*/
+    .container-conteudo-titulo {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        padding-left: 0;
+    }
+    /*Alinha o conteúdo de forma centralizada, alinha o texto de forma centralizada, define altura da div de 50% em relação à div que a
+    contém, zera o padding inferior da div e muda o tamanho da fonte do texto*/
+    .text-background {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        height: 50%;
+        padding-bottom: 0;
+    }
+    /*Altera o tamanho da fonte do parágrafo*/
+    .text-background p {
+        font-size: 25px;
+    }
+    /*Define padding inferior e à direira da div de 30px*/
+    .container-titulo .container-logo {
+        padding-bottom: 30px;
+        padding-right: 30px;
+    }
+    /*Altera as dimensões do botão, altera o tamanho da fonte de seu texto interno, e alinha seu conteúdo de forma centralizada*/
+    .container-conteudo-titulo button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        justify-self:center;
+        align-self: center;
+    }
+    
+    /*Define largura de 100% da largura do site para o body e alinha seu conteúdo de forma centralizada*/
+    .container-body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Altera o tamanho da fonte e define largura da div de 90% em relação ao site*/
+    .container-apresentacao {
+        width: 90%;
+    }
+    /*Define largura da div de 100% da largura do site e alinha o conteúdo de forma centralizada*/
+    .container-missoes {
+        width: 100%;
+        align-items: center;
+    }
+    /*Define largura da div de 100% da largura do site e alinha o conteúdo de forma centralizada*/
+    .missoes {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Define 30% da largura do site para cada div de missão e adiciona um padding superior para se distanciar do título que antecede a div*/
+    .mission-div {
+        padding-top: 30px;
+        padding-right: 10px;
+        width: 25%;
+    }
+    /*Define largura da div de 100% da largura do site*/
+    .goals {
+        width: 100%;
+    }
+    /*Alinha o conteúdo em linha com quebra de linha*/
+    .container-goals {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    /*Define largura de 300px para a div e altera o tamanho da fonte*/
+    .goal-div {
+        width: 300px;
+        font-size: 16px;
+    }
+    /*Altera a largura da div para 250px*/
+    .text-goal {
+        width: 250px;
+    }
+    /*É definida largura para a div de 100% da largura do site, além de uma altura de 300px*/
+    .container-time {
+        width: 100%;
+        height: 300px;
+    }
+    /*É alterado o tamanho da fonte para 26px;*/
+    .text-time {
+        font-size: 26px;
+    }
+    /*É definida largura de 100% do site para a seção footer*/
+    .container-footer {
+        width: 100%;
+    }
+}
